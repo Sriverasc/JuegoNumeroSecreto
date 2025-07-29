@@ -14,9 +14,8 @@ const generarNumeroSecreto = () => {
     
     const numero = Math.floor(Math.random() * 10) + 1;
 
-    if (numerosGenerados.includes(numero)) {
-        return generarNumeroSecreto();
-    }
+    if (numerosGenerados.includes(numero)) return generarNumeroSecreto();
+
     numerosGenerados.push(numero);
     return numero;
 }
